@@ -6,7 +6,7 @@
 /*   By: qdang <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 21:04:30 by qdang             #+#    #+#             */
-/*   Updated: 2019/10/19 15:09:56 by qdang            ###   ########.fr       */
+/*   Updated: 2019/11/21 20:42:58 by qdang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,5 +85,12 @@ int				ft_isprime(int nb);
 char			*ft_strcut(char *str, char c);
 char			*ft_strrem(char *str, char c);
 int				ft_wordcount(char *str);
+int				get_next_line(const int fd, char **line);
+void			ft_lstaddend(t_list **alst, t_list *new);
+char			**ft_mapnew(int	width, int length);
+void			ft_mapput(char **map, int width, int length);
+char			**ft_mapcpy(char **old, int width, int length);
+int				ft_mapdel(char ***map_a, int length);
+int				ft_strnbr(char *sp);
 
 #endif
